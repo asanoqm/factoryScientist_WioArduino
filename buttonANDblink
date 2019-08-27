@@ -12,9 +12,9 @@ void loop() {
   val = digitalRead(FUNC_BTN);
 //  Serial.println(val);
 
-  if(val == 1){
-    digitalWrite(BLUE_LED,HIGH);
-  }else{
+  if(val == 0){
     digitalWrite(BLUE_LED,LOW);
+  }else{
+    digitalWrite(BLUE_LED,HIGH);
   }
 }
